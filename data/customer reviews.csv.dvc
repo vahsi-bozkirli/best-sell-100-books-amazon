@@ -1,0 +1,5 @@
+outs:
+- md5: 09ac151c6161b31f70564fe6c35c3744
+  size: 1155731
+  hash: md5
+  path: customer reviews.csv

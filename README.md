@@ -6,4 +6,8 @@ Amazon kullanıcılarının kitapları değerlendirme sırasında 1-5 aralığı
 model olarak AdaBoost Regressor, Decision Tree Regressor, SVR ve Random Forest Regressor modellerini,
 metrik olarak mean squared error metriğini kullandım.
 
+en iyi sonucu veren: Random Forest Regressor
+
+modelin dezavantajı: eğitim sırasında yalnızca yüksek değerlendirme almış kitapları kullandığımdan dolayı düşük değerlendirme yapamaz
+modelin avantajı: objektif ve bilimsel olarak otomatik değerlendirme sunar
 

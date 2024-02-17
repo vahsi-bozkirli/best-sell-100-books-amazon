@@ -1,13 +1,11 @@
-# Amazon web mağazasında çok satan ilk 100 kitabın yorumlarına ve özelliklerine bağlı olarak değerlendirme skorlarının belirlenmesi / tahmini
-Veri Kaynağı: [https://www.kaggle.com/datasets/anshtanwar/top-200-trending-books-with-reviews]
+# Determination / estimation of evaluation scores based on the comments and features of the top 100 bestsellers in the Amazon web store
+Data Source: [https://www.kaggle.com/datasets/anshtanwar/top-200-trending-books-with-reviews]
 
-Amazon kullanıcılarının kitapları değerlendirme sırasında 1-5 aralığında, manuel olarak bir değer belirtmelerine gerek kalmadan yaptıkları yorumları, yorum yaptıkları zamanı(yıl ve mevsim) ve satın aldıkları fiyatı dikkate alarak 1-5 aralığında otomatik değerleme yapan model tasarladım
+During the evaluation of the books of Amazon users, I designed the model that automatically validates in the range of 1-5, taking into account the comments they made without having to specify a value manually, the time they commented (year and season) and the price they bought
 
-model olarak AdaBoost Regressor, Decision Tree Regressor, SVR ve Random Forest Regressor modellerini,
-metrik olarak mean squared error metriğini kullandım.
+As a model, I used AdaBoost Regressor, Decision Tree Regressor, SVR and Random Forest Regressor models, metric mean squared error metric.
 
-en iyi sonucu veren: Random Forest Regressor
+best results: Random Forest Regressor
 
-modelin dezavantajı: eğitim sırasında yalnızca yüksek değerlendirme almış kitapları kullandığımdan dolayı düşük değerlendirme yapamaz
-modelin avantajı: objektif ve bilimsel olarak otomatik değerlendirme sunar
+disadvantage of the model: the advantage of the model that cannot perform low evaluation due to the fact that I use only highly evaluated books during training: it offers objective and scientifically automatic evaluation
 
